@@ -1,0 +1,275 @@
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #000000;
+  color: #ffffff;
+  height: 100vh;
+  padding: 20px 0;
+}
+
+.sidebar-header {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.sidebar-header .menu-list{
+    display:flex;
+    list-style: none;
+    gap:5px;
+}
+.sidebar-header .menu-list li img{
+    width:20px;
+    height: 20px;
+}
+.open-terminal{
+    display: flex;
+    align-items: center;
+    height:40px;
+    margin-top: -10px;
+    padding:10px;
+    width:90%;
+    margin-left: 5%;
+    border: 1px solid rgb(52, 52, 52);
+    border-radius: 5px;
+}
+.open-terminal img{
+width:20px;
+height:20px;
+margin-left:20%;
+margin-right:5px;
+}
+
+.sidebar-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar-nav-menu {
+  display:  flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.sidebar-nav-menu .new-folder-container {
+  display: flex !important;
+  align-items: center;
+  margin-right: auto;
+  
+}
+.new-folder-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  background-image: url('./assets/weui_arrow-filled.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.new-folder-text {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sidebar-nav-menu ul {
+  display:  flex !important;
+  flex-direction: row;
+  align-items: center;
+
+  list-style: none;
+  margin-left: auto;
+  gap:0px;
+}
+.icon-list li img{
+width:10px;
+height: 10px;
+}
+.sidebar-nav-menu li {
+  margin: 0 5px;
+}
+
+
+
+.sidebar-nav-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav-menu a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Welcome Text Styles */
+.welcome-container {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.frame-image {
+  margin-bottom: 20px;
+  background: #000000;
+  padding: 20px;
+  border-radius: 8.43px;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    331.09deg,
+    #000000 7.97%,
+    #666666 92.03%
+  );
+  border-image-slice: 1;
+  margin-left: 60%;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
+
+.frame-image img {
+  width: 50px;
+  height: 50px;
+  margin-top: -8px;
+   margin-left: -8px;
+  border-radius: 8.43px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 20%;
+  width:100%;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 0.9;
+  width:100%;
+  margin-left: 20%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Box Styles */
+.search-container {
+  width: 80%;
+  max-width: 1308px;
+  margin-left:15%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 75px;
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 94px;
+}
+
+.search-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  color: #000000;
+  font-size: 24px;
+  height: 100%;
+}
+
+.search-box input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
+.search-box .generate-button {
+  background-color: black;
+  border: 1px solid black;
+  color: #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 10px;
+  height: 50px;
+  width:10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.search-box button:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Signup Form Styles */
+#signupForm .form-group {
+  margin-bottom: 15px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#signupForm input {
+     margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.generate-button{
+background-color: black;
+color: white;
+border-radius: 40px;
+   height: 50px;
+  border: 1px solid black;
+  color: #ffffff;
+  padding:10px;
+   width:10%;
+}
